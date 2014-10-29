@@ -124,7 +124,12 @@ The first thing that came to mind was the fact that they used the name method to
 ## Release 6: Reflection
 Write your reflection here.
 
-This was probably the most productive and learning-packed day so far at DBC. Seeing the concepts that I picked up while learning Ruby thrown in to a format that is slightly different was revitalizing and overall great for my scope of reference when it comes to programming. 
+This was probably the most productive and learning-packed day so far at DBC. Seeing the concepts that I picked 
+up while learning Ruby thrown in to a format that is slightly different was revitalizing and overall great for my scope 
+of reference when it comes to programming. 
 
 I honestly liked having excplicit instructions on why things work, even if that meant that I
-learned a bit of superfluous information. I felt as if I really got a solid grasp on how Javascript functions and classes can work together to make sets of data. Overall, the content I went through today had more meaning than usual simply because it was explained and shown extremely efficiently. I also made sure that I understood every nuance before I moved on. 
+learned a bit of superfluous information. I felt as if I really got a solid grasp on how Javascript 
+functions and classes can work together to make sets of data. Overall, the content I went through today 
+had more meaning than usual simply because it was explained and shown extremely efficiently. I also made 
+sure that I understood every nuance before I moved on. 
