@@ -130,6 +130,6 @@ of reference when it comes to programming.
 
 I honestly liked having excplicit instructions on why things work, even if that meant that I
 learned a bit of superfluous information. I felt as if I really got a solid grasp on how Javascript 
-functions and classes can work together to make sets of data. Overall, the content I went through today 
+functions and objects can work together to make sets of data. Overall, the content I went through today 
 had more meaning than usual simply because it was explained and shown extremely efficiently. I also made 
 sure that I understood every nuance before I moved on. 
