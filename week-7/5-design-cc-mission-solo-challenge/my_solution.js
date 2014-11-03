@@ -51,94 +51,65 @@ var sword = {
 }
 
 var dummy = {
-	hitpoints: 4,
+	hitpoints: 10,
 	look: "You see a target dummy."
 }
 
+var hit = {
+	hit: false
+}
 
+function hit_roll() {
+	var roll = Math.floor((Math.random() * 10) + 1) // The 1 will be replaced with a value modified for skill later
+	if (roll > 5)
+		hit.hit = true
+	else
+		hit.hit = false
+}
 
 function attack(weapon) {
-	// hit_roll
-	// if hit_roll == true
-	// 	do something
 	if (dummy.hitpoints <= 0) 
-	{
-		return "The dummy is damaged too heavily to train on.";
-	}
-	else if (dummy.hitpoints > 0)
-	{
-		dummy.hitpoints -= weapon.damage;
-		return "You hit and dealt " +String(weapon.damage)+ " damage."
-	}
+		return ("The dummy is damaged too heavily to train on.")
+	else if (hit.hit == false)
+		return ("You missed.")
+	else if(dummy.hitpoints > 0)
+		{player.sword_skill +=1;
+		dummy.hitpoints -= weapon.damage + player.sword_skill;
+		return ("You hit and deal " +String(weapon.damage)+ " damage.")}
 	else
-		return "You should never see this."
-	{
+		return ("You somehow missed.") 
 }
 
-function hit_roll(){
-	var roll = Math.floor((Math.random() * 10));
-	console.log(roll)
-	if (roll > 5)
-		return true;
-	else
-		return false;
-}
+hit_roll()
 
-	
-
-
-	// hit_roll();
-	// if (hit_roll() == true)
-		
-	// else if (hit_roll() == false)
-	// 	console.log("False")
-// var a = 10;
-
-// myFunction();
-
-// function myFunction()
-//    {
-//    a = 20;
-//    }
-
-// console.log("Value of 'a' outside the function " + a);
-
-
-
-
-// console.log(candle.lit)
-// console.log(player.look)
 console.log("-------------")
+hit_roll()
+console.log(attack(sword))
+
+
+console.log("-------------")
+hit_roll()
+console.log(attack(sword))
+
+console.log("-------------")
+hit_roll()
 console.log(attack(sword))
 console.log("-------------")
-// console.log(attack(sword))
-// console.log("-------------")
-// console.log(attack(sword))
-// console.log("-------------")
-// console.log(dummy.hitpoints)
-console.log(hit_roll())
-console.log(hit_roll())
-console.log(hit_roll())
-
-
-
-
 
 
 
 // Refactored Code
-
-
-
-
-
+// It is as refactored as the working solution is. 
 
 // Reflection
-// This project was fun to work on. I was able to get at least the two main pieces of the code working (The
-// attack and hit_roll.) how I wanted them to work together. The syntax can be confusing at times, but I am not terribly
-// worried about it. Preactice will make it feel more second-nature. Lots of brackets and stuff to remember to put in...
+// This took me a little while to figure out. I wanted to build what is essentially a 
+// training dummy in a video game. Getting the damn dummy to take damage was easy. Figuring out how to
+// make a hit claculator that scales with "skill" is harder. The skill value does go up, but I am
+// working on a way to implement it. I wanted to get this version turned is ASAP, though. 
 //
+// I was going to use a nested if statement, but I decided that manipulating a variable attribute might be
+// easier, as the syntax was confusing to me. Too many brackets to keep track of. 
 //
-//
-//
-//
+// I was also not quite sure how to call other functions inside of a function, so I have the same piece of code
+// that essentially circumnavigates the same problem. I could potentially use it to set like a blindness
+// status or something, though. All I would have to is have it change the boolean, essentially. Maybe it was a good idea in disguise? 
