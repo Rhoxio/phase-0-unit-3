@@ -5,22 +5,20 @@
 // __________________________________________
 // Write your code below.
 
+var secretNumber = Number(7)
 
+var password = String("just open the door")
 
+var allowedIn = false
 
-
-
-
+var members = ["John", 2, 3, "Mary"]
 
 // __________________________________________
 // Reflection: Use the reflection guidelines to write a reflection here.
-//
-//
-//
-//
-//
-//
 
+// This challenge was baby-mode easy after the stuff that we had to figure out
+// using Ruby. I didn't even have to look up syntax because my text editor is so
+// smart. 
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
